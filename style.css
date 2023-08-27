@@ -23,19 +23,27 @@ body{
 }
 
 #submit-area{    
-    width: 400px;
+    background-color: #212121;
+    text-align: center;
+    width: 800px;
     margin: auto;
-    padding: 10px;
-    border-radius: 25px;
-    margin-top:50px
+    padding: 50px;
+    margin-top:50px;
+    border: 1px solid lime;
+    border-radius: 25px
 }
+
+#submit-area:hover{
+    box-shadow: 0 0 10px rgb(50, 205, 50);
+    text-shadow: 0 0 10px rgb(158, 240, 158);
+}
+
 
 #textinput{
     background-color: #272727;
     border: 2px solid rgba(0, 255, 0, 0.724);
     width: 300px;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(50, 205, 50, 0.715);
     color: white;
     border-radius: 10px;
 }
@@ -43,6 +51,7 @@ body{
 #textinput:hover{
     text-shadow: 0 0 5px white;
     background-color: #131313;
+    box-shadow: 0 0 10px rgba(50, 205, 50, 0.715);
 }
 
 #next-btn{
@@ -60,10 +69,20 @@ body{
 
 #text-input-desc{
     margin-bottom: 10px;
-    font-size:20px;
+    font-size:22px;
 }
 
-#story p {
+.convo-box{
+    border-top: 1px solid lime;
+    padding: 10px;;
+}
+
+.from {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.message {
     padding: 10px;
     font-size: 20px;
 }

@@ -6,25 +6,73 @@
     <title>The Trials</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes-min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Chapter I. A Welcome Greeting</h1>
+        <h1>Chapter I. A Little Help Needed.</h1>
 
         <div id="submit-area">
             <p id="text-input-desc">Submission Area:</p>
             <input type="text" name="textinput" id="textinput">
-            <button id="next-btn">Next</button>
+            <button onclick="submit()" id="next-btn">Next</button>
         </div>
 
         <br><br><br>
 
         <div id="story">
-            <p>???: Hello? Is someone there?</p>
-            <p>???: Hello? Is someone there?</p>
+            <div class="convo-box">
+                <h2 class="from">???:</h2>
+                <p class="message">Hello! I know that you could receive this message</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">???:</h2>
+                <p class="message">I am Project 013. I am a humanoid created to help others.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">As of now, you may not realize it but you are currently infected by a disease.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">I am here to guide and help you get rid of the disease that you are currently carrying.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">But... I am not going to guide you for free. It gives me happiness and entertainment when I see you struggle</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">You see that submission area above? You need to find the right answer to that</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">I'll give you the first answer for free: Press on Right Click, Click Inspect Element, Find the Answer.</p>
+                <!-- 
+                    Decode this using Base 64: 
+                    V2VsY29tZSE=
+                -->
+            </div>
+
         </div>
         
     </div>
     
+    <!-- JS -->
+    
+    <script>
+        
+        let encryptedAES = CryptoJS.AES.encrypt("Welcome!", "12365478");
+        let decryptedBytes = CryptoJS.AES.decrypt(encryptedAES, "My Secret Passphrase");
+
+        console.log(encryptedAES);
+
+        // let textinput = document.querySelector("#textinput");
+        // function submit(){
+        //     if (textinput.value == ){
+
+        //     }
+        // }
+    </script>
 </body>
 </html>
