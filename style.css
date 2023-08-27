@@ -4,7 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+html{
+    font-family: 'Roboto Mono', monospace !important;
 }
 
 body{
@@ -23,26 +27,18 @@ body{
 }
 
 #submit-area{    
-    background-color: #212121;
     text-align: center;
-    width: 800px;
     margin: auto;
     padding: 50px;
     margin-top:50px;
-    border: 1px solid lime;
     border-radius: 25px
-}
-
-#submit-area:hover{
-    box-shadow: 0 0 10px rgb(50, 205, 50);
-    text-shadow: 0 0 10px rgb(158, 240, 158);
 }
 
 
 #textinput{
     background-color: #272727;
     border: 2px solid rgba(0, 255, 0, 0.724);
-    width: 300px;
+    width: 400px;
     padding: 10px;
     color: white;
     border-radius: 10px;
