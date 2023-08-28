@@ -26,6 +26,11 @@ body{
     text-align: center;
 }
 
+.little-warning{
+    text-align: center;
+    font-size: 11px;
+}
+
 #submit-area{    
     text-align: center;
     margin: auto;
