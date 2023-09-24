@@ -13,8 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Chapter I. A Little Help Needed.</h1>
-        <p class="little-warning">(Use Desktop PC or Laptop to Play this)</p>
+        <h1>Chapter III. Healing the World</h1>
 
         <div id="submit-area">
             <p id="text-input-desc">Submission Area:</p>
@@ -23,38 +22,35 @@
         </div>
 
         <br><br><br>
-        <!-- 
-            Decode this using Base 64: 
-            V2VsY29tZSE=
-        -->
+
         <div id="story">
             <div class="convo-box">
-                <h2 class="from">???:</h2>
-                <p class="message">Hello! I know that you could receive this message</p>
-            </div>
-            <div class="convo-box">
-                <h2 class="from">???:</h2>
-                <p class="message">I am Project 013. I am a humanoid created to help others.</p>
+                <h2 class="from">Project 013:</h2>
+                <p class="message">Zerastead, our dear city. Full of aspiring scientists with their inventions</p>
+                <div class="d-flex justify-content-center">
+                    <a href="images/TLA_utopian_3.png" target="_blank"><img src="images/TLA_utopian_3.png" alt="" width="300px"></a>
+                    <a href="images/TLA_utopian_4.png" target="_blank"><img src="images/TLA_utopian_4.png" alt="" width="300px"></a>
+                </div>
             </div>
             <div class="convo-box">
                 <h2 class="from">Project 013:</h2>
-                <p class="message">As of now, you may not realize it but you are currently infected by a disease.</p>
+                <p class="message">I was one of them, but I realized that what they are doing are repetitive, technological advances that provides nothing.</p>
             </div>
             <div class="convo-box">
                 <h2 class="from">Project 013:</h2>
-                <p class="message">I am here to guide and help you get rid of the disease that you are currently carrying.</p>
+                <p class="message">Why not try to improve humans? Removing their diseases and making them much more stronger and even near immortals?</p>
             </div>
             <div class="convo-box">
                 <h2 class="from">Project 013:</h2>
-                <p class="message">But... I am not going to guide you for free. It gives me happiness and entertainment when I see you struggle</p>
+                <p class="message">Do you think that would be a good idea? Look at you, you are infected with the same disease. Would you like to join me?</p>
             </div>
             <div class="convo-box">
                 <h2 class="from">Project 013:</h2>
-                <p class="message">You see that submission area above? You need to find the right answer to that</p>
+                <p class="message">We could change the world if you will allow me to help you.</p>
             </div>
             <div class="convo-box">
                 <h2 class="from">Project 013:</h2>
-                <p class="message">I'll give you the first answer for free: Press CTRL + 'U', find the Base64 Encoded String. Then decode it using the following link: <a href="https://www.base64decode.org/" target="_blank">https://www.base64decode.org/</a></p>
+                <p class="message">Decode this: .--- --- .... -. / .- -. -.. . .-. ... --- -.</p>
             </div>
 
         </div>
@@ -65,15 +61,12 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script>
-        let decryptedBytes = CryptoJS.AES.decrypt("U2FsdGVkX1+jtvL3qjqvZ/bOnmxQOQJeL6i1HSzVZFU=", atob("MTIzNjU0Nzg=")).toString(CryptoJS.enc.Utf8);
+        let decryptedBytes = CryptoJS.AES.decrypt("U2FsdGVkX1+Y88eW9PuwNBBD/iIz3adeNYDV4Ffkf2I=", atob("MTIzNjU0Nzg=")).toString(CryptoJS.enc.Utf8);
         let textinput = document.querySelector("#textinput");
-
-        
-
         function submit(){
             if (textinput.value == decryptedBytes){
-                alert("Proceeding to Level 2!");
-                window.location.href = "dawkusaefilsh.html";
+                alert("Proceeding to Last Level!");
+                window.location.href = "bwejkfdkwefk.html";
             } else{
                 alert("Wrong!");
             }

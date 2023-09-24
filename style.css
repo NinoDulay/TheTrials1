@@ -16,6 +16,26 @@ body{
     color: lime;
     text-shadow: 0 0 5px limegreen;
 }
+
+img{
+    width: 300px;
+    box-shadow: 0 0 5px limegreen;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+a{
+    color: lime;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: lime;
+    text-shadow: 0 0 10px limegreen;
+    text-decoration: underline;
+}
+
 .container{
     width: 70%;
     margin: auto;

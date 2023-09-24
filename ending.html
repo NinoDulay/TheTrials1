@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trials</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>The Lost Archive: Retrieved Log #2</h1>
+        <p class="little-warning">This is just a teaser for an upcoming ARG game entitled "The Lost Archives"</p>
+
+        <br><br><br>
+
+        <div id="story">
+            <div class="convo-box">
+                <h2 class="from">Current User: Albert Heist</h2>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Log #1:</h2>
+                <p class="message">Zerastead is in need of a certain program that would allow further development of the future technological advancements to come.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Log #3:</h2>
+                <p class="message">Our team has decided to call this program "The Connection" as it was intended to be the program that will connect us humans to the technology that is currently evolving.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Log #6:</h2>
+                <p class="message">We are setting up the laboratory and this is the attached image of our laboratory where we will undergo the creation of "The Connection".</p>
+                <div class="d-flex justify-content-center">
+                    <a href="images/The Creation 1.png" target="_blank"><img src="images/The Creation 1.png" alt="" width="180px"></a>
+                    <a href="images/The Creation 2.png" target="_blank"><img src="images/The Creation 2.png" alt="" width="180px"></a>
+                    <a href="images/The Office.png" target="_blank"><img src="images/The Office.png" alt="" width="180px"></a>
+                </div>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Log #10:</h2>
+                <p class="message">John Anderson, the one who pioneered this research, is having a good time as of the moment as I am writing on this log. He and our teammates are celebrating because finally, for so long… He would be now able to fulfill his life-long work.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Log #11:</h2>
+                <p class="message">We are starting our project after our celebration last night. The date is January 18, 2105, we are trying to create an artificial intelligence that would help us create better programs in the future, without the need of human assistance.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Log #12:</h2>
+                <p class="message">On the same day, we were able to create one. It was a prototype of the series that we will call "Project 0s", or pronounced "Project Zeroes", because this literally came from John's mind when he was at the bottom of his life, or what he called the "Zero" of his life. Because 10 years ago, no one ever dared to accept him in any job or company that was technology related as they thought of him as a low-class programmer with nothing but ideas, no action and nothing to prove.</p>
+                <div class="d-flex justify-content-center">
+                    <a href="images/Rejection 2.png" target="_blank"><img src="images/Rejection 2.png" alt="" width="180px"></a>
+                    <a href="images/Rejection.png" target="_blank"><img src="images/Rejection.png" alt="" width="180px"></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        
+
+        let decryptedBytes = CryptoJS.AES.decrypt("U2FsdGVkX1/B/GL212hwru8IWY7hVtpvKls1dlTvbQHElw6cskKVcvuNpTo+U+JK", atob("MTIzNjU0Nzg=")).toString(CryptoJS.enc.Utf8);
+
+        let textinput = document.querySelector("#textinput");
+        function submit(){
+            if (textinput.value == decryptedBytes){
+                alert("Thank you so much!");
+                window.location.href = "bwejkfdkwefk.html";
+            } else{
+                alert("Wrong!");
+            }
+        }
+
+    </script>
+</body>
+</html>

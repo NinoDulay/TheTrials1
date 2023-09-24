@@ -25,8 +25,32 @@
 
         <div id="story">
             <div class="convo-box">
-                <h2 class="from">???:</h2>
-                <p class="message">Hello! I know that you could receive this message</p>
+                <h2 class="from">Project 013:</h2>
+                <p class="message">Nice job getting that one, but this time I will try to make it harder for you.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">You are infected with a disease that causes brain deterioration.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">It is the year 2105, every one looks fine but most of these people are infected with the disease.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">I wanted to help. But people have always ignored me, they keep saying that I am just a nobody who will amount to nothing.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">They never tried my ideas, I wanted to change the world but no one was with me.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">I want to show you that we could change the world together.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">Project 013:</h2>
+                <p class="message">Decode this: "zhudvwhdg", using Caesar Cipher, 3 Shifts</p>
             </div>
 
         </div>
@@ -37,15 +61,13 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script>
-        
-        let passphraseDecode = btoa("12365478")
-        let decryptedBytes = CryptoJS.AES.decrypt("U2FsdGVkX1+jtvL3qjqvZ/bOnmxQOQJeL6i1HSzVZFU=", atob("MTIzNjU0Nzg=")).toString(CryptoJS.enc.Utf8);
+        let decryptedBytes = CryptoJS.AES.decrypt("U2FsdGVkX18YsQzPvtfEkBGH2piSZ6lg24uymAOzjzg=", atob("MTIzNjU0Nzg=")).toString(CryptoJS.enc.Utf8);
 
         let textinput = document.querySelector("#textinput");
         function submit(){
             if (textinput.value == decryptedBytes){
-                alert("Proceeding to Level 2!");
-                window.location.href = "dawkusaefilsh.html";
+                alert("Proceeding to Level 3!");
+                window.location.href = "gjrtgmnkrftoie.html";
             } else{
                 alert("Wrong!");
             }

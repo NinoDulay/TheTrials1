@@ -13,8 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Chapter I. A Little Help Needed.</h1>
-        <p class="little-warning">(Use Desktop PC or Laptop to Play this)</p>
+        <h1>Chapter IV. The Truth?</h1>
 
         <div id="submit-area">
             <p id="text-input-desc">Submission Area:</p>
@@ -23,40 +22,48 @@
         </div>
 
         <br><br><br>
-        <!-- 
-            Decode this using Base 64: 
-            V2VsY29tZSE=
-        -->
+
         <div id="story">
             <div class="convo-box">
                 <h2 class="from">???:</h2>
-                <p class="message">Hello! I know that you could receive this message</p>
+                <p class="message">Don't listen to it</p>
             </div>
             <div class="convo-box">
                 <h2 class="from">???:</h2>
-                <p class="message">I am Project 013. I am a humanoid created to help others.</p>
+                <p class="message">It just wants to take over your brain. Just like what he did to me</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">???:</h2>
+                <p class="message">The disease he has been talking about, it doesn't exist.</p>
             </div>
             <div class="convo-box">
                 <h2 class="from">Project 013:</h2>
-                <p class="message">As of now, you may not realize it but you are currently infected by a disease.</p>
+                <p class="message">It has always been true, John. Just accept it.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">John Anderson:</h2>
+                <p class="message">013 tried to take over my body so that it could infect others as well.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">John Anderson:</h2>
+                <p class="message">013 is the real disease. Do not listen to him</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">You:</h2>
+                <p class="message">I am confused. I do not know which one is telling the truth.</p>
+            </div>
+            <div class="convo-box">
+                <h2 class="from">John Anderson:</h2>
+                <p class="message">Please, listen to me and you will be safe.</p>
             </div>
             <div class="convo-box">
                 <h2 class="from">Project 013:</h2>
-                <p class="message">I am here to guide and help you get rid of the disease that you are currently carrying.</p>
+                <p class="message">I am with you since the start. Is there any reason why you should not trust me at all?</p>
             </div>
             <div class="convo-box">
-                <h2 class="from">Project 013:</h2>
-                <p class="message">But... I am not going to guide you for free. It gives me happiness and entertainment when I see you struggle</p>
+                <h2 class="from">Last Clue:</h2>
+                <p class="message">Scan the QR Code which is in the Marian Computer Society Bulletin Board</p>
             </div>
-            <div class="convo-box">
-                <h2 class="from">Project 013:</h2>
-                <p class="message">You see that submission area above? You need to find the right answer to that</p>
-            </div>
-            <div class="convo-box">
-                <h2 class="from">Project 013:</h2>
-                <p class="message">I'll give you the first answer for free: Press CTRL + 'U', find the Base64 Encoded String. Then decode it using the following link: <a href="https://www.base64decode.org/" target="_blank">https://www.base64decode.org/</a></p>
-            </div>
-
         </div>
         
     </div>
@@ -65,15 +72,14 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script>
-        let decryptedBytes = CryptoJS.AES.decrypt("U2FsdGVkX1+jtvL3qjqvZ/bOnmxQOQJeL6i1HSzVZFU=", atob("MTIzNjU0Nzg=")).toString(CryptoJS.enc.Utf8);
-        let textinput = document.querySelector("#textinput");
-
         
+        let decryptedBytes = CryptoJS.AES.decrypt("U2FsdGVkX1/bBZY3OfJ/MEk8l0MbVoyQpLauvTlAJuqcLj3ppgAAQxpMR0lZbG3I", atob("MTIzNjU0Nzg=")).toString(CryptoJS.enc.Utf8);
 
+        let textinput = document.querySelector("#textinput");
         function submit(){
             if (textinput.value == decryptedBytes){
-                alert("Proceeding to Level 2!");
-                window.location.href = "dawkusaefilsh.html";
+                alert("Try and find the lost archives");
+                window.location.href = "ending.html";
             } else{
                 alert("Wrong!");
             }
