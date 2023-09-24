@@ -107,3 +107,8 @@ a:hover{
     padding: 10px;
     font-size: 20px;
 }
+
+#signature{
+    border-top:1px solid lime;
+    padding-top: 40px;
+}
