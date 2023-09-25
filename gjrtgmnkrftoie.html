@@ -64,7 +64,7 @@
         let decryptedBytes = CryptoJS.AES.decrypt("U2FsdGVkX1+Y88eW9PuwNBBD/iIz3adeNYDV4Ffkf2I=", atob("MTIzNjU0Nzg=")).toString(CryptoJS.enc.Utf8);
         let textinput = document.querySelector("#textinput");
         function submit(){
-            if (textinput.value == decryptedBytes){
+            if (textinput.value.toLowerCase() == decryptedBytes){
                 alert("Proceeding to Last Level!");
                 window.location.href = "bwejkfdkwefk.html";
             } else{
